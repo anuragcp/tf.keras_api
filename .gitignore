@@ -1,4 +1,7 @@
 int_to_word_out.pickle
 model_face.h5
 model_face.json
-./TF_Model/*
+./TF_Model/checkpoint
+./TF_Model/tf_model.data-00000-of-00001
+./TF_Model/tf_model.index
+./TF_Model/tf_model.meta
