@@ -1,0 +1,4 @@
+int_to_word_out.pickle
+model_face.h5
+model_face.json
+./TF_Model/*
