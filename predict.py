@@ -8,7 +8,7 @@ classifier_f = open("int_to_word_out.pickle", "rb")
 int_to_word_out = pickle.load(classifier_f)
 classifier_f.close()
 
-"""def pre_process(image):
+def pre_process(image):
     image = image.astype('float32')
     image = image / 255.0
     return image
@@ -22,7 +22,8 @@ def load_image():
     image=np.array([image])
     image=pre_process(image)
     return image
-"""
+
+
 # Loading model and checkpoints
 with tf.Session() as sess:
     saver = tf.train.import_meta_graph("./TF_Model/tf_model.meta")

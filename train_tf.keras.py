@@ -49,7 +49,7 @@ y,num_classes=one_hot_encode(y)
 #split dataset
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=7)
 
-epochs = 10
+epochs = 5
 #define model
 model=define_model(num_classes,epochs)
 
