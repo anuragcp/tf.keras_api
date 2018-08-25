@@ -21,7 +21,8 @@ def load_image():
     image = misc.imresize(image, (64, 64))
     image=np.array([image])
     image=pre_process(image)
-    return image
+    #return image
+    print("loaded image")
 
 
 # Loading model and checkpoints
@@ -32,3 +33,5 @@ with tf.Session() as sess:
     input_fn = graph.get_tensor_by_name(name="input_fn_input:0")
     softmax_layer = graph.get_tensor_by_name(name="softmax/Softmax:0")
     print("all is well")
+    feed_img = load_image()
+    print(sess.run(softmax_layer,feed_dict=feed_img))
