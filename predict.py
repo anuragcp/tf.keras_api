@@ -35,3 +35,4 @@ with tf.Session() as sess:
     print("all is well")
     feed_img = load_image()
     print(sess.run(softmax_layer,feed_dict=feed_img))
+    print("Completed")
